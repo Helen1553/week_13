@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week12-task3-chat</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body class="grid-container">
+
+    <header class="header_grid-item">
+        <h1 class="title">
+            Comment service with spam-blocker
+        </h1>
+    </header>
+
+    <main class="main_grid-item">
+        <section class="main-section1_form">
+
+            <h2 class="main-section1_form-text">
+                Leave your comment below:
+            </h2>
+
+            <div class="main-section1_form1">
+                <h3 class="main-section1_form1-text">
+                    Your name:
+                </h3>
+
+                <form class="main-section1_form1-name">
+                    <input type="text" class="main-section1_form1-name-input" placeholder=" enter your name here" id="name-input">
+                </form>
+            </div>
+
+            <div class="main-section1_form2">
+                <h3 class="main-section1_form2-text">
+                    Link to your avatar:
+                </h3>
+
+                <form class="main-section1_form2-link">
+                    <input type="url" class="main-section1_form2-link-input" placeholder=" enter your avatar's URL here" id="link-input">
+                </form>
+            </div>
+
+            <div class="main-section1_form3">
+                <h3 class="main-section1_form3-text">
+                    Your comment:
+                </h3>
+
+                <textarea type="text" class="main-section1_form3-link-input" placeholder=" enter your comment here" id="comment-input"></textarea>
+            </div>
+
+            <button type="button" class="main-section1_btn" onclick="addComment()" id="btn">
+                Send
+            </button>
+            
+        </section>
+
+        <section class="main-section2_chat">
+            <h2 class="main-section2_chat-text">
+                Chat:
+            </h2>
+
+            <div class="main-section2_chat-itself" id="chat"></div>
+        </section>
+    </main>
+
+    <footer class="footer_grid-item">
+        <h4 class="footer_text">
+            All rights reserved, 2025
+        </h4>
+    </footer>
+
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
